@@ -19,9 +19,9 @@ class Solution{
             
             maxx = max(tillSum, maxx);
             
-            if(tillSum<0){
+            if(tillSum<0)
                 tillSum=0;
-            }
+            
         }
         return maxx;
         
