@@ -19,11 +19,19 @@ public:
 
 //         cout<<best<<"-"<<mini<<endl;
 //         int profit = best-mini;
-        for(int i=0;i<prices.size();i++){
-            mini = min(mini, prices[i]);
-            profit = max(profit, prices[i]-mini);
-        }
+//         for(int i=0;i<prices.size();i++){
+//             mini = min(mini, prices[i]);
+//             profit = max(profit, prices[i]-mini);
+//         }
         
+//         return profit;
+        
+        for(int i=0; i<prices.size(); i++){
+            mini = min(mini, prices[i]);
+            
+            profit = max(profit, prices[i]-mini);
+            
+        }
         return profit;
     }
 };
