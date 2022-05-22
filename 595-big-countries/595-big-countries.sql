@@ -1,4 +1,20 @@
 # Write your MySQL query statement below
+
+# 1st Solution - Using OR
+
+# SELECT name, population, area 
+# FROM World 
+# WHERE area>=3000000 or population>= 25000000
+
+
+# 2nd Solution - Using UNION
+
 SELECT name, population, area 
 FROM World 
-WHERE area>=3000000 or population>= 25000000
+WHERE area>=3000000 
+
+UNION
+
+SELECT name, population, area 
+FROM World 
+WHERE population>= 25000000
