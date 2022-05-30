@@ -20,18 +20,11 @@ public:
             st.push(nums2[i]);
         }
         
-        // for(int i=0; i<ans.size(); i++){
-        //     mp[ans[i]]++;
-        // }
-        
-        // vector<int> v;
-        
         
         for(int i=0; i<nums1.size(); i++){
-            // v.push_back(mp[nums1[i]]);
-            if(mp.find(nums1[i])!=mp.end()){
+
+            if(mp.find(nums1[i])!=mp.end())
                 ans[i] = mp[nums1[i]];
-            }
         }
         
         return ans;
